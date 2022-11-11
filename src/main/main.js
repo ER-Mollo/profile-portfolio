@@ -2,16 +2,14 @@
 import '../App.scss';
 import Projects from '../Projects/Project';
 import Header from './header/header';
+import About from './about/about';
 
 function Main() {
   return (
     <div className="app">
-      {/* <div id="app__works" className="app__container work"> */}
         <Header/>
-        {/* <div className="app__wrapper app__flex"> */}
-          <Projects  ></Projects>
-        {/* </div> */}
-      {/* </div> */}
+        <About/>
+        <Projects/>
     </div>
 
   );

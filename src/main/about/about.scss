@@ -1,0 +1,119 @@
+.about{
+    padding: 5%;
+    text-align: center;
+    
+    // background-color: pink;
+}
+.about .heading h2{
+    font-size: 1.2rem;
+    padding-bottom:10px ;
+    color:rgb(240, 218, 21);
+    @media screen and (max-width: 900px) {  
+        font-size: 1.2rem;      
+     }
+}
+.about .heading h1{
+    font-size: 1.5rem;
+    padding-bottom:10px ;
+    @media screen and (max-width: 900px) {  
+        font-size: 1.2rem;      
+     }
+}
+.about .about_info{
+    display: flex;
+    padding: 5%;
+    // justify-content: space-around;
+    // background-color: bisque;
+    @media screen and (max-width: 900px) {  
+        display: grid;   
+       
+     }
+}
+.about_bio{
+    width: 60%;
+    padding-right: 5%;
+    text-align: left;
+    
+    @media screen and (max-width: 900px) {  
+        width: 100%;  
+    
+     }
+}
+.about_bio h1{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    color: rgb(1, 0, 59);
+    @media screen and (max-width: 900px) {  
+        font-size: 1rem;   
+        text-align: left;
+     }
+}
+.about_bio p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    // font-family: 'Courier New', Courier, ;
+    font-family: serif;
+    @media screen and (max-width: 900px) {  
+        font-size: 1rem;   
+       
+     }
+}
+.about_skills{
+    width: 50%;
+    padding-right: 6%;
+    text-align: left;
+    
+    @media screen and (max-width: 900px) {  
+        width: 100%;  
+       
+     }
+    
+}
+.about_skills h1{
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    color: rgb(1, 0, 59);
+    text-align: center;
+    @media screen and (max-width: 900px) {  
+        font-size: 1.2rem;   
+        padding-top: 20px;
+        
+     }
+}
+.about_skills p{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: 'Courier New', Courier, ;
+    // font-family: serif;
+    @media screen and (max-width: 900px) {  
+        font-size: 1rem;   
+       
+     }
+}
+.about_skills .skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    // background-color: red;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about_skills .skills_container{
+    background-color: rgb(253, 238, 104);
+    width: 120px;
+    // height: 40px;
+    margin-right:10px ;
+    margin-top: 10px;
+
+}
+.about_skills .skills_container p{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

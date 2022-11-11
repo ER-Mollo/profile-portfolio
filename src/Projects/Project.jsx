@@ -3,25 +3,18 @@ import { motion } from "framer-motion";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import "./Project.scss";
 
+
 import ProjectData from './ProjectData'
 import Contact from '../Contact/Contact';
 function Projects() {
    return (
       <>
-         <h2 className="head-text">
-            <span> Portfolio Section </span>
-         </h2>
-         <span style={{color:'#98C942'}}> Codetribe Tembisa 2022</span>
-
-         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin:'20px' }}>
-            <img src="https://avatars.githubusercontent.com/u/64089457?s=96&amp;v=4" alt="@codexpression-nj" size="48" height="48" width="48" data-view-component="true" class="avatar circle mr-3" />
-            <h2 style={{margin:'5px'}}>
-               Ellen Refilwe Mollo
-            </h2>
-
+        
+        {/* <Contact/> */}
+        <div className="heading">
+            <h2>Recent Projects</h2>
+            <h1>Look At The Projects I Worked on</h1>
          </div>
-         
-        <Contact/>
         
 
          <motion.div

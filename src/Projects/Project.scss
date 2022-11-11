@@ -1,14 +1,22 @@
-.avatar {
-   display: inline-block;
-   overflow: hidden;
-   line-height: 1;
-   vertical-align: middle;
-   background-color: var(--color-avatar-bg);
-   border-radius: 6px;
-   flex-shrink: 0;
-   box-shadow: 0 0 0 1px var(--color-avatar-border);
-   border-radius: 50%;
-   }
+ .heading{
+   padding: 20px;
+   text-align: center;
+ }
+ .heading h2{
+   font-size: 1.2rem;
+   padding-bottom:10px ;
+   color:rgb(240, 218, 21);
+   @media screen and (max-width: 900px) {  
+       font-size: 1.2rem;      
+    }
+}
+ .heading h1{
+   font-size: 1.5rem;
+   padding-bottom:10px ;
+   @media screen and (max-width: 900px) {  
+       font-size: 1.2rem;      
+    }
+}
 
    .flex-auto {
       flex: auto !important;
@@ -44,7 +52,7 @@
       margin: 0.5rem;
 
       &:hover {
-         background-color: var(--secondary-color);
+         background-color: rgb(240, 218, 21);
          color: #ffffff;
       }
 
@@ -52,14 +60,14 @@
          padding: 1rem 2rem;
          border-radius: 0.85rem;
          &:hover {
-            background-color: var(--secondary-color);
+            background-color: rgb(240, 218, 21);
             color: #ffffff;
          }
       }
    }
 
    .item-active {
-      background-color: var(--secondary-color);
+      background-color: rgb(240, 218, 21);
       color: #ffffff;
    }
 }
@@ -82,7 +90,7 @@
       transition: all 0.3s ease;
 
       &:hover {
-         box-shadow: 0 0 25px rgba(146,200,62,0.87);
+         box-shadow: 5px 5px 15px 0px rgb(253, 238, 104);
       }
       @media screen and (min-width: 2000px) {
          width: 470px;
@@ -132,7 +140,7 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: rgba(146,200,62,0.87);
+      background-color: rgb(240, 218, 21);
       color: #fff;
       margin: 1rem;
       font-family: var(--font-base);
