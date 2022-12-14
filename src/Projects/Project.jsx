@@ -4,9 +4,48 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import "./Project.scss";
 
 
-import ProjectData from './ProjectData'
+// import ProjectData from './ProjectData'
 import Contact from '../Contact/Contact';
+import { db } from '../config/firebase';
+import {addDoc, collection,doc, deleteDoc,getDocs,query,where} from 'firebase/firestore';
+
 function Projects() {
+   const [ProjectData,setProjectData]= React.useState([]);
+
+   const project=[];
+   const projectRef = collection(db,"projects");
+
+   const getItems = async()=>{
+
+      // const q = query(collection(db, "projects"));
+      //   const querySnapshot = await getDocs(q)
+        
+
+      //   querySnapshot.forEach((doc) => {
+        
+      //     console.log(doc.data())
+      //     project.push({id:doc.id , codeLink: doc.data().codeLink,description:doc.data().description, imageUrl:doc.data().imageUrl,projectLink:doc.data().projectLink,tag:doc.data().tag,title:doc.data().title})
+      // });
+
+
+      // setProjectData(project);
+      let data = await getDocs(projectRef);
+      setProjectData(data.docs.map((doc)=>({...doc.data(),id: doc.id})))
+
+      // setPrices(data.docs.map((doc)=>(doc.data().price)));
+
+      
+
+      
+      }
+
+      React.useEffect(()=>{
+         console.log("some")
+         getItems();
+         
+         
+        }, [])
+
    return (
       <>
         
